@@ -2,7 +2,8 @@ FROM debian
 
 # Install packages.
 RUN apt-get update  -y \
- && apt-get install -y git cmake vim make wget gnupg libz-dev emacs openjdk-8-jdk
+ && apt-get install -y git cmake vim make wget gnupg libz-dev emacs \
+ openjdk-8-jdk maven
 
 # copy the jdk.
 #COPY jdk-9_linux-x64_bin.tar.gz /opt/jdk-9_linux-x64_bin.tar.gz
